@@ -1,0 +1,62 @@
+[
+  {
+    "name": "AMBER14",
+    "forcefield_type": "Traditional",
+    "platform": "CPU",
+    "timestamp": "2025-11-17T16:16:01.689729",
+    "n_atoms": 700,
+    "n_residues": 43,
+    "setup_time": 0.5094022750854492,
+    "minimization_time": 0.45635485649108887,
+    "minimized_energy": -882.5835629522035,
+    "md_time_1000steps": 1.302121639251709,
+    "final_energy": -555.89874174836,
+    "performance_ns_per_day": 132.7064959148541,
+    "status": "success"
+  },
+  {
+    "name": "AMBER14",
+    "forcefield_type": "Traditional",
+    "platform": "CUDA",
+    "timestamp": "2025-11-17T16:16:03.961538",
+    "n_atoms": 700,
+    "n_residues": 43,
+    "setup_time": 0.5475330352783203,
+    "minimization_time": 0.09018492698669434,
+    "minimized_energy": -883.4173214728929,
+    "md_time_1000steps": 0.0785071849822998,
+    "final_energy": -547.8735041751065,
+    "performance_ns_per_day": 2201.0724246317,
+    "status": "success"
+  },
+  {
+    "name": "TorchMD-NET",
+    "forcefield_type": "ML",
+    "platform": "CPU",
+    "timestamp": "2025-11-17T16:16:04.787352",
+    "n_atoms": 700,
+    "n_residues": 43,
+    "setup_time": 0.1233222484588623,
+    "minimization_time": 0.11543130874633789,
+    "minimized_energy": -915.7592552434533,
+    "md_time_1000steps": 1.2634060382843018,
+    "final_energy": -459.8743995202424,
+    "performance_ns_per_day": 136.77313133207866,
+    "status": "success"
+  },
+  {
+    "name": "TorchMD-NET",
+    "forcefield_type": "ML",
+    "platform": "CUDA",
+    "timestamp": "2025-11-17T16:16:06.293328",
+    "n_atoms": 700,
+    "n_residues": 43,
+    "setup_time": 0.40886712074279785,
+    "minimization_time": 0.19420599937438965,
+    "minimized_energy": -915.9847851882404,
+    "md_time_1000steps": 0.22745776176452637,
+    "final_energy": -408.47356964510453,
+    "performance_ns_per_day": 759.7014876937445,
+    "status": "success"
+  }
+]

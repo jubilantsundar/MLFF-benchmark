@@ -1,0 +1,55 @@
+# Exclude old benchmark files with sensitive references
+BRD4_PROTEIN_BENCHMARK_RESULTS.md
+BENCHMARK_QUICK_SUMMARY.md
+THREE_FF_BENCHMARK_REPORT.md
+benchmark_protein_only.py
+benchmark_forcefields.py
+benchmark_three_forcefields.py
+
+# Exclude old log files
+*.log
+benchmark_run.log
+protein_benchmark_fast.log
+three_ff_benchmark.log
+three_ff_benchmark_fixed.log
+hairpin_benchmark*.log
+
+# Exclude old benchmark result directories
+protein_benchmark_results/
+three_ff_benchmark/
+benchmark_results/
+
+# Exclude PDB files except hairpin (RNA example)
+brd4*.pdb
+*-dna-*.pdb
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.backup

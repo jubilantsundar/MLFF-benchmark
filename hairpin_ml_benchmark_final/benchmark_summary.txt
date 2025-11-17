@@ -1,0 +1,26 @@
+
+======================================================================
+BENCHMARK SUMMARY
+======================================================================
+
+### TRADITIONAL FORCEFIELDS ###
+
+Forcefield      Platform Setup(s)   Min(s)     MD(s)      ns/day       Status    
+-------------------------------------------------------------------------------------
+AMBER14         CPU      0.51       0.46       1.30       132.71       success   
+AMBER14         CUDA     0.55       0.09       0.08       2201.07      success   
+
+
+### MACHINE LEARNING FORCEFIELDS ###
+
+Forcefield      Platform Setup(s)   Min(s)     MD(s)      ns/day       Status    
+-------------------------------------------------------------------------------------
+TorchMD-NET     CPU      0.12       0.12       1.26       136.77       success   
+TorchMD-NET     CUDA     0.41       0.19       0.23       759.70       success   
+
+
+### PERFORMANCE COMPARISON ###
+
+Fastest: AMBER14 on CUDA
+  Performance: 2201.07 ns/day
+
