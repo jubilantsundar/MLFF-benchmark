@@ -28,6 +28,10 @@ def create_title_page(pdf):
     ax.text(0.5, 0.68, 'Machine Learning Forcefield Benchmarks',
             ha='center', va='center', fontsize=18)
 
+    # Author
+    ax.text(0.5, 0.63, 'Author: Sundar Jubilant',
+            ha='center', va='center', fontsize=12, style='italic')
+
     # Date and system info
     date_str = datetime.now().strftime('%Y-%m-%d')
     info_text = f"""
@@ -40,7 +44,7 @@ def create_title_page(pdf):
     • OpenMM: Latest with OpenMM-Torch
 
     Test System:
-    • RNA Hairpin Structure
+    • Protein Segment Structure
     • 700 atoms, 43 residues
     • Benchmark: 1000 MD steps
     """
@@ -344,7 +348,7 @@ def main():
         # Set PDF metadata
         d = pdf.infodict()
         d['Title'] = 'TorchMD-NET Integration & Benchmark Report'
-        d['Author'] = 'ML Forcefield Benchmark Suite'
+        d['Author'] = 'Sundar Jubilant (sundartjubilant@gmail.com)'
         d['Subject'] = 'Machine Learning Forcefields for Molecular Dynamics'
         d['Keywords'] = 'TorchMD-NET, OpenMM, Machine Learning, Molecular Dynamics'
         d['CreationDate'] = datetime.now()

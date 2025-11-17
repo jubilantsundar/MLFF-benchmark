@@ -2,6 +2,8 @@
 
 Complete setup, testing, and benchmarking suite for using TorchMD-NET machine learning forcefields with OpenMM molecular dynamics simulations.
 
+**Author**: Sundar Jubilant (sundartjubilant@gmail.com)
+
 ## 🎯 Overview
 
 This repository contains a fully functional integration of TorchMD-NET (a state-of-the-art neural network forcefield) with OpenMM for running molecular dynamics simulations. It includes comprehensive benchmarks comparing traditional empirical forcefields (AMBER14) with the ML forcefield framework.
@@ -17,7 +19,7 @@ This repository contains a fully functional integration of TorchMD-NET (a state-
 
 ## 📊 Benchmark Results
 
-Performance comparison on RNA hairpin structure (700 atoms, 1000 MD steps):
+Performance comparison on protein segment (700 atoms, 1000 MD steps):
 
 | Forcefield   | Platform | Performance (ns/day) | Speedup |
 |--------------|----------|----------------------|---------|
@@ -73,7 +75,7 @@ python3 comprehensive_ff_benchmark.py hairpin.pdb --output-dir my_benchmark
 ├── torchmdnet_openmm_integration.py       # OpenMM integration demo
 ├── comprehensive_ff_benchmark.py          # Multi-forcefield benchmark suite
 ├── generate_benchmark_pdf.py              # PDF report generator
-├── hairpin.pdb                            # Example RNA hairpin structure
+├── hairpin.pdb                            # Example protein segment
 └── hairpin_ml_benchmark_final/            # Benchmark results
     ├── benchmark_results.json
     └── benchmark_summary.txt
@@ -132,9 +134,9 @@ Usage:
 python3 comprehensive_ff_benchmark.py <pdb_file> [--output-dir DIR]
 ```
 
-## 🧬 Example: RNA Hairpin
+## 🧬 Example: Protein Segment
 
-The repository includes a test RNA hairpin structure (700 atoms, 43 residues) used for all benchmarks.
+The repository includes a test protein segment (700 atoms, 43 residues) used for all benchmarks.
 
 ```bash
 # Quick 10-step simulation

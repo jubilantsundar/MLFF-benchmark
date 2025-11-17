@@ -1,7 +1,7 @@
 # TorchMD-NET Benchmark Analysis
 
 ## System Information
-- **Structure**: Hairpin RNA (700 atoms, 43 residues)
+- **Structure**: Protein segment (700 atoms, 43 residues)
 - **Hardware**: Tesla T4 GPU, CUDA 12.6
 - **PyTorch**: 2.7.1
 - **TorchMD-NET**: 2.4.12 (compiled from source)
@@ -67,7 +67,7 @@
 - [x] Import order and compatibility fixes
 
 ### Upcoming
-- [ ] Train or download a pre-trained TorchMD-NET model for proteins/RNA
+- [ ] Train or download a pre-trained TorchMD-NET model for proteins
 - [ ] Integrate TorchForce with actual TorchMD-NET predictions
 - [ ] Benchmark real ML forcefield performance
 - [ ] Compare accuracy vs traditional forcefields

@@ -19,7 +19,7 @@ protein_benchmark_results/
 three_ff_benchmark/
 benchmark_results/
 
-# Exclude PDB files except hairpin (RNA example)
+# Exclude PDB files except hairpin (protein example)
 brd4*.pdb
 *-dna-*.pdb
 

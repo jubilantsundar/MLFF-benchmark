@@ -36,7 +36,7 @@ Successfully integrated TorchMD-NET as a force provider in OpenMM simulations.
 - Support for both CPU and CUDA platforms
 - Clean wrapper interface for any TorchMD-NET model
 
-**Demo Results** (Hairpin RNA, 700 atoms):
+**Demo Results** (Protein segment, 700 atoms):
 ```
 Platform: CPU
 - Model: 756,865 parameters
@@ -54,7 +54,7 @@ Created comprehensive benchmark comparing traditional and ML forcefields.
 
 **Benchmark Script**: `/home/ubuntu/MD/benchmark_MLFF/comprehensive_ff_benchmark.py`
 
-**Results** (Hairpin RNA, 700 atoms, 1000 MD steps):
+**Results** (Protein segment, 700 atoms, 1000 MD steps):
 
 | Forcefield   | Platform | Performance (ns/day) | Notes |
 |--------------|----------|----------------------|-------|
@@ -102,7 +102,7 @@ param_count = sum([p.numel() for p in model.parameters()])
 ├── test_torchmdnet.py                  # Installation validation tests
 ├── torchmdnet_openmm_integration.py    # OpenMM integration demo
 ├── comprehensive_ff_benchmark.py       # Multi-FF benchmark suite
-├── hairpin.pdb                         # Test structure (RNA hairpin)
+├── hairpin.pdb                         # Test structure (protein segment)
 ├── hairpin_ml_benchmark_final/         # Benchmark results
 │   ├── benchmark_results.json
 │   └── benchmark_summary.txt
@@ -258,7 +258,7 @@ Based on TorchMD-NET papers:
 
 **Generated**: 2025-11-17
 **Location**: `/home/ubuntu/MD/benchmark_MLFF/`
-**Tested on**: Hairpin RNA (700 atoms, 43 residues)
+**Tested on**: Protein segment (700 atoms, 43 residues)
 
 ---
 
